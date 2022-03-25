@@ -1,22 +1,22 @@
+
 import React from 'react'
 import Button from '@mui/material/Button';
 import "./navBar.css"
 import CartWidget from '../cartWidget/cartWidget'
 
 function NavBar() {
-    ///JSX
-    return(
+    return (
         <header className='main-header'>
             <div className="container-logo">
-            <img src="inter.png" alt="logo"></img>
+                <img src='../../img/river.jpg' alt="logo" className='responsive' width="600" height="400"></img>
             </div>
             <ul className='navbar'>
                 <li><Button variant="contained">Home</Button></li>
-                <li><Button variant="outlined">Nosotros</Button></li>
+                <li><Button variant="contained">Nosotros</Button></li>
                 <li><Button variant="contained">Productos</Button></li>
-                <li><Button variant="outlined">Contacto</Button></li>
+                <li><Button variant="contained">Contacto</Button></li>
             </ul>
-            <Button><CartWidget/></Button>
+            <Button><CartWidget /></Button>
         </header>
     )
 }
