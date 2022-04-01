@@ -1,8 +1,8 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount.js'
-import './Item.css';
+import ItemCount from '../itemCount/itemCount.js'
+import './item.css';
 
-export default function Item({ data }) {
+export default function item({ data }) {
     const { title, price, size, id, stock, img } = data
 
     return (<div className="product-item" >
@@ -11,7 +11,7 @@ export default function Item({ data }) {
         <p> Tamaño: {size} </p>
         <img src={img}></img>
 
-        <ItemCount initial={1} stock={stock} />
+        <itemCount initial={1} stock={stock} />
     </div>
     )
 }
