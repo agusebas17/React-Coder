@@ -1,5 +1,12 @@
 /*     */
 .responsive {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
+
+.logoImg {
+
+  height: 100px;
+  width: 100px;
+
+}
