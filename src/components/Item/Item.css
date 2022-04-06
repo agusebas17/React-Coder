@@ -1,4 +1,4 @@
-count-container__contador {
+.count-container__contador {
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
     width: 140px;
@@ -34,5 +34,14 @@ count-container__contador {
     padding-top: 10px;
     color: var(--primary-color);
     background-color: var(--just-white);
-} 
+}
 
+img { 
+    height: 150px;
+    width: 150px;
+    align-items: center;
+}
+
+span{
+    align-items: center;
+}

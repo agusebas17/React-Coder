@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import item from '../item/item';
+import Item from '../Item/Item';
 import { productList } from '../../data/data.js'
 
-import './itemList.css'
+import './ItemList.css'
 
 import { useParams } from 'react-router-dom'
 
@@ -36,7 +36,7 @@ const ItemList = ({children}) => {
     return(
         <div className="container-cards">
             {console.log("products: ", products)}
-            {products.map( ( product ) =>  <item data={product} key={product.id}/>)}
+            {products.map( ( product ) =>  <Item data={product} key={product.id}/>)}
         </div>
     ) 
 }

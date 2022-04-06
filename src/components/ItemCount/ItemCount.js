@@ -2,18 +2,6 @@ import React from 'react';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
 
-export default function Product(props) {
-
-    return ( <div className = "product-item" >
-        <h2> {props.title} </h2> 
-        <p> Precio: $ {props.price} </p> 
-        <p> Tamaño: {props.size} </p> 
-
-        <ItemCount initial={1} stock={props.stock}/>
-        </div>
-    )
-}
-
 const ItemCount = ({initial,stock,onAdd}) => {
     const [qty, setQty] = useState(initial);
 
@@ -48,3 +36,5 @@ const ItemCount = ({initial,stock,onAdd}) => {
     </div>
     );
 };
+
+export default ItemCount
